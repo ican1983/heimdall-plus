@@ -93,6 +93,7 @@ class SettingsSeeder extends Seeder
             'qwant' => 'app.options.qwant',
             'bing' => 'app.options.bing',
             'startpage' => 'app.options.startpage',
+            'baidu' => 'app.options.baidu',
         ]);
 
         if(!$setting = Setting::find(4)) {
@@ -124,6 +125,7 @@ class SettingsSeeder extends Seeder
             'sv' => 'Svenska (Swedish)',
             'es' => 'Español (Spanish)',
             'tr' => 'Türkçe (Turkish)',
+            'zh' => '中文 (中国)',
         ]);
         if($languages = Setting::find(5)) {
             $languages->options = $language_options;

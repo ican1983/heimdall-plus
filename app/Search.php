@@ -72,6 +72,12 @@ abstract class Search
                 'method' => 'get',
                 'type' => 'standard',
             ],
+            'baidu' => [
+                'url' => 'https://www.baidu.com/s',
+                'var' => 'wd',
+                'method' => 'get',
+                'type' => 'standard',
+            ],
         ];
     }
 
